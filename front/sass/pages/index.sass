@@ -1,0 +1,58 @@
+$blue: #000055
+$white: #ffffff
+
+$font-suisseintl-med: SuisseIntl-Medium, sans-serif
+
+body
+  overscroll-behavior: none
+  img
+    max-width: 100%
+    height: auto
+.wrapper
+  width: 100%
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  height: 100%
+  display: flex
+.banner
+    position: relative
+    width: 50%
+    background: url("../img/bg.jpg") no-repeat 50% 0/cover
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    height: calc(var(--vh, 1vh) * 100)
+    overflow: hidden
+    &::before
+      position: absolute
+      bottom: 10%
+      left: 0
+      display: block
+      content: ""
+      width: 150px
+      height: 165px
+      transform-origin: left
+      background: url("../img/candy.png") no-repeat 0 0/contain
+    &__title
+      position: relative
+      top: 6%
+      max-width: 50vh
+    &__pers
+      position: relative
+      left: 3%
+      margin-bottom: -10px
+      max-width: 90vh
+    &__bottom-txt
+      position: absolute
+      bottom: 2%
+      left: 2%
+      max-width: 90%
+      font-family: $font-suisseintl-med
+      font-size: 15px
+      line-height: 24px
+      letter-spacing: .28px
+      color: $white
+      opacity: .7
+      text-shadow: #000 1px 1px 0, 2px 2px 2px rgba(0,0,0,0)
+
