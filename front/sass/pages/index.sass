@@ -67,14 +67,14 @@ body
         color: $white
         text-transform: uppercase
         background: $magenta
-        padding: 2px 11px 0 11px
+        padding: 2px 15px 0 15px
       &-text
         display: inline-block
         color: $white
         font-family: $font-suisseintl-med
         font-size: 30px
         text-transform: uppercase
-        margin: 23px 0 0 15px
+        margin: 23px 0 0 20px
     &__top, &__bottom
       position: relative
       z-index: 2
@@ -86,41 +86,42 @@ body
     &__date
       display: flex
       flex-direction: column
-      border: 2px solid $magenta
-      border-radius: 5px
+      border: 1px solid $magenta
+      border-radius: 3px
       background: $magenta
       margin-top: 15px
 
       &-item
         font-family: $font-suisseintl-med
-        font-size: 35px
+        font-size: 38px
         color: $white
-        padding: 0 7px
+        padding: 4px 12px 2px
+        text-align: center
         &:nth-child(1)
           //border-top-left-radius: 5px
           //border-top-right-radius: 5px
         &:nth-child(2)
-          border-bottom-right-radius: 5px
-          border-bottom-left-radius: 5px
+          border-bottom-right-radius: 3px
+          border-bottom-left-radius: 3px
           background: $blue
     &__title
       color: $white
       font-family: $font-suisseintl-semibold
-      font-size: 55px
+      font-size: 59px
       letter-spacing: 0.03em
       span
         font-family: $font-wulkan
-        font-size: 57px
+        font-size: 61px
         display: flex
         align-items: center
-        line-height: 57px
+        line-height: 58px
         letter-spacing: 0.03em
         &::before
           content: ""
           display: block
           background: url("../img/vs.svg") no-repeat 0 0/contain
-          width: 42px
-          height: 36px
+          width: 49px
+          height: 42px
           margin-right: 5px
           position: relative
           bottom: 3px
